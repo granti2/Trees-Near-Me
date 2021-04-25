@@ -1,0 +1,25 @@
+﻿<table>
+    <thead>
+    <th>Species</th>
+    <th>Location</th>
+    <th>Circumference</th>
+    <th>Height</th>
+    <th>Spread</th>
+    </thead>
+
+    <tbody>
+        {% for tree in data %}
+        <tr>
+            <td>{{ tree['Species'] }}</td>
+            <td>{{ tree['Location'] }}</td>
+            <td>{{ tree['Circumference']}}</td>
+            <td>{{ tree['Height']}}</td>
+            <td>{{ tree['Spread']}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<style>
+body { background-image: url('https://pics.clipartpng.com/midle/Tree_PNG_Clip_Art-2890.png'); 
+        }
+</style>

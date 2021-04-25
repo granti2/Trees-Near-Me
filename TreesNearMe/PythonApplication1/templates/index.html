@@ -1,0 +1,32 @@
+﻿<ul>
+    <img src="https://i.imgur.com/NtbnR6V.jpg" alt="Tree Logo">
+
+
+</ul>
+
+<ul>
+    <li><a href="/all">All Trees</a></li>
+    
+</ul>
+<ul>
+    <li><a href="/treefacts">Tree-N-A Facts</a></li>
+
+</ul>
+<h2>Filter by County</h2>
+<ul>
+    {% for county, count in counties.items() %}
+    <li><a href="/by_county/{{ county }}">{{county}} ({{count}})</a></li>
+    {% endfor %}
+   
+
+</ul>
+
+<h2>Filter by species</h2>
+<ul>
+    {% for s, count in species.items() %}
+    <li><a href="/by_species/{{ s }}">{{s}} ({{count}})</a></li>
+    {% endfor %}
+</ul>
+<style>
+body { background-image: url('https://i.pinimg.com/736x/ed/3e/01/ed3e01fb943c298f97a9b19ecd943fff.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
+</style>
